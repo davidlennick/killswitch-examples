@@ -1,0 +1,227 @@
+Attaching to ids_suricata_1, elasticsearch, logstash, kibana
+[35mlogstash         |[0m Connection to Listbot looks good, now downloading latest translation maps.
+[35mlogstash         |[0m 
+[35mlogstash         |[0m 07/12 08:39:29 [[1;32mNOTICE[0m] Downloading 1 item(s)
+[33msuricata_1       |[0m HOSTNAME=b450
+[33msuricata_1       |[0m SHLVL=1
+[33msuricata_1       |[0m HOME=/root
+[33msuricata_1       |[0m OINKCODE=OPEN
+[33msuricata_1       |[0m PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[33msuricata_1       |[0m IF=enp37s0
+[33msuricata_1       |[0m SURICATA_CAPTURE_FILTER=/etc/suricata/capture-filter.bpf
+[33msuricata_1       |[0m PWD=/
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Notice> - This is Suricata version 5.0.3 RELEASE running in SYSTEM mode
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - CPUs/cores online: 16
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - Found an MTU of 1500 for 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - Found an MTU of 1500 for 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - eve-log output device (regular) initialized: eve.json
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Error> - [ERRCODE: SC_ERR_STATS_LOG_GENERIC(278)] - eve.stats: stats are disabled globally: set stats.enabled to true. See https://suricata.readthedocs.io/en/suricata-5.0.3/configuration/suricata-yaml.html#stats
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - Going to log the md5 sum of email body
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - Going to log the md5 sum of email subject
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - DNP3 log sub-module initialized.
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - DNP3 log sub-module initialized.
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:29 - <Info> - Rule with ID 2026440 is bidirectional, but source and destination are the same, treating the rule as unidirectional
+[36melasticsearch    |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[35mlogstash         |[0m 
+[35mlogstash         |[0m 07/12 08:39:29 [[1;32mNOTICE[0m] Download complete: /etc/listbot/cve.yaml.bz2
+[35mlogstash         |[0m 
+[35mlogstash         |[0m Download Results:
+[35mlogstash         |[0m gid   |stat|avg speed  |path/URI
+[35mlogstash         |[0m ======+====+===========+=======================================================
+[35mlogstash         |[0m 989808|OK  |   169KiB/s|/etc/listbot/cve.yaml.bz2
+[35mlogstash         |[0m 
+[35mlogstash         |[0m Status Legend:
+[35mlogstash         |[0m (OK):download completed.
+[35mlogstash         |[0m 
+[35mlogstash         |[0m 07/12 08:39:29 [[1;32mNOTICE[0m] Downloading 1 item(s)
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Info> - 61 rule files processed. 27489 rules successfully loaded, 0 rules failed
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Info> - Threshold config parsed: 0 rule(s) found
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Info> - 27504 signatures processed. 1254 are IP-only rules, 7183 are inspecting packet payload, 18647 inspect application layer, 108 are decoder event only
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Warning> - [ERRCODE: SC_WARN_FLOWBIT(306)] - flowbit 'ET.ButterflyJoin' is checked but not set. Checked in 2011296 and 0 other sigs
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Warning> - [ERRCODE: SC_WARN_FLOWBIT(306)] - flowbit 'ET.Netwire.HB.1' is checked but not set. Checked in 2018282 and 0 other sigs
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Warning> - [ERRCODE: SC_WARN_FLOWBIT(306)] - flowbit 'ET.GenericPhish_Adobe' is checked but not set. Checked in 2023048 and 0 other sigs
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:30 - <Warning> - [ERRCODE: SC_WARN_FLOWBIT(306)] - flowbit 'BE.Radmin.Challenge' is checked but not set. Checked in 2003480 and 0 other sigs
+[35mlogstash         |[0m [#941b11 864KiB/1.8MiB(44%) CN:1 DL:1.2MiB]
+[35mlogstash         |[0m 
+[35mlogstash         |[0m 07/12 08:39:31 [[1;32mNOTICE[0m] Download complete: /etc/listbot/iprep.yaml.bz2
+[35mlogstash         |[0m 
+[35mlogstash         |[0m Download Results:
+[35mlogstash         |[0m gid   |stat|avg speed  |path/URI
+[35mlogstash         |[0m ======+====+===========+=======================================================
+[35mlogstash         |[0m 941b11|OK  |   2.0MiB/s|/etc/listbot/iprep.yaml.bz2
+[35mlogstash         |[0m 
+[35mlogstash         |[0m Status Legend:
+[35mlogstash         |[0m (OK):download completed.
+[36melasticsearch    |[0m [2020-07-12T08:39:31,451][INFO ][o.e.n.Node               ] [tpotcluster-node-01] version[7.8.0], pid[1], build[default/tar/757314695644ea9a1dc2fecd26d1a43856725e65/2020-06-14T19:35:50.234439Z], OS[Linux/5.4.0-40-generic/amd64], JVM[Alpine/OpenJDK 64-Bit Server VM/11.0.7/11.0.7+11-alpine-r1]
+[36melasticsearch    |[0m [2020-07-12T08:39:31,454][INFO ][o.e.n.Node               ] [tpotcluster-node-01] JVM home [/usr/lib/jvm/java-11-openjdk]
+[36melasticsearch    |[0m [2020-07-12T08:39:31,454][INFO ][o.e.n.Node               ] [tpotcluster-node-01] JVM arguments [-Xshare:auto, -Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=SPI,COMPAT, -Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -Xms2048m, -Xmx2048m, -XX:MaxDirectMemorySize=1073741824, -Des.path.home=/usr/share/elasticsearch, -Des.path.conf=/usr/share/elasticsearch/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[35mlogstash         |[0m OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:32Z","tags":["warning","plugins-discovery"],"pid":1,"message":"Expect plugin \"id\" in camelCase, but found: apm_oss"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:32Z","tags":["warning","plugins-discovery"],"pid":1,"message":"Expect plugin \"id\" in camelCase, but found: triggers_actions_ui"}
+[35mlogstash         |[0m WARNING: An illegal reflective access operation has occurred
+[35mlogstash         |[0m WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/usr/share/logstash/logstash-core/lib/jars/jruby-complete-9.2.11.1.jar) to method sun.nio.ch.NativeThread.signal(long)
+[35mlogstash         |[0m WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+[35mlogstash         |[0m WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[35mlogstash         |[0m WARNING: All illegal access operations will be denied in a future release
+[36melasticsearch    |[0m [2020-07-12T08:39:33,465][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [aggs-matrix-stats]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,465][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [analysis-common]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,466][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [constant-keyword]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,467][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [flattened]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,468][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [frozen-indices]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,468][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [ingest-common]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,468][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [ingest-geoip]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,468][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [ingest-user-agent]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,469][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [kibana]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,469][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [lang-expression]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,469][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [lang-mustache]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,469][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [lang-painless]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,469][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [mapper-extras]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,470][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [parent-join]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,470][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [percolator]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,470][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [rank-eval]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,470][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [reindex]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,470][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [repository-url]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,471][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [search-business-rules]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,471][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [searchable-snapshots]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,471][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [spatial]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,471][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [tasks]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,471][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [transform]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,472][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [transport-netty4]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,472][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [vectors]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,472][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-analytics]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,472][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-async-search]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,472][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-autoscaling]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-ccr]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-core]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-deprecation]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-enrich]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-eql]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,473][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-graph]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-identity-provider]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-ilm]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-logstash]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-monitoring]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-ql]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,474][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-rollup]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,475][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-security]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,475][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-sql]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,475][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-voting-only-node]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,475][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] loaded module [x-pack-watcher]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,476][INFO ][o.e.p.PluginsService     ] [tpotcluster-node-01] no plugins loaded
+[36melasticsearch    |[0m [2020-07-12T08:39:33,518][INFO ][o.e.e.NodeEnvironment    ] [tpotcluster-node-01] using [1] data paths, mounts [[/data (/dev/mapper/vgubuntu-root)]], net usable_space [843.4gb], net total_space [913.7gb], types [ext4]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,520][INFO ][o.e.e.NodeEnvironment    ] [tpotcluster-node-01] heap size [1.9gb], compressed ordinary object pointers [true]
+[36melasticsearch    |[0m [2020-07-12T08:39:33,631][INFO ][o.e.n.Node               ] [tpotcluster-node-01] node name [tpotcluster-node-01], node ID [-EWw0E6vTIaWu-ewCbJkaw], cluster name [tpotcluster]
+[36melasticsearch    |[0m [2020-07-12T08:39:37,692][INFO ][o.e.d.DiscoveryModule    ] [tpotcluster-node-01] using discovery type [zen] and seed hosts providers [settings]
+[36melasticsearch    |[0m [2020-07-12T08:39:38,439][INFO ][o.e.n.Node               ] [tpotcluster-node-01] initialized
+[36melasticsearch    |[0m [2020-07-12T08:39:38,441][INFO ][o.e.n.Node               ] [tpotcluster-node-01] starting ...
+[36melasticsearch    |[0m [2020-07-12T08:39:38,692][INFO ][o.e.t.TransportService   ] [tpotcluster-node-01] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}
+[36melasticsearch    |[0m [2020-07-12T08:39:38,968][WARN ][o.e.b.BootstrapChecks    ] [tpotcluster-node-01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[36melasticsearch    |[0m [2020-07-12T08:39:38,970][INFO ][o.e.c.c.Coordinator      ] [tpotcluster-node-01] cluster UUID [6T7Na_dTRu24pG1lmpf7Vg]
+[36melasticsearch    |[0m [2020-07-12T08:39:39,027][INFO ][o.e.c.s.MasterService    ] [tpotcluster-node-01] elected-as-master ([1] nodes joined)[{tpotcluster-node-01}{-EWw0E6vTIaWu-ewCbJkaw}{zu1yhCeuRTma5RvYEE7BNg}{127.0.0.1}{127.0.0.1:9300}{dimrt}{xpack.installed=true, transform.node=true} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 3, version: 50, delta: master node changed {previous [], current [{tpotcluster-node-01}{-EWw0E6vTIaWu-ewCbJkaw}{zu1yhCeuRTma5RvYEE7BNg}{127.0.0.1}{127.0.0.1:9300}{dimrt}{xpack.installed=true, transform.node=true}]}
+[36melasticsearch    |[0m [2020-07-12T08:39:39,096][INFO ][o.e.c.s.ClusterApplierService] [tpotcluster-node-01] master node changed {previous [], current [{tpotcluster-node-01}{-EWw0E6vTIaWu-ewCbJkaw}{zu1yhCeuRTma5RvYEE7BNg}{127.0.0.1}{127.0.0.1:9300}{dimrt}{xpack.installed=true, transform.node=true}]}, term: 3, version: 50, reason: Publication{term=3, version=50}
+[36melasticsearch    |[0m [2020-07-12T08:39:39,192][INFO ][o.e.h.AbstractHttpServerTransport] [tpotcluster-node-01] publish_address {172.20.0.2:9200}, bound_addresses {0.0.0.0:9200}
+[36melasticsearch    |[0m [2020-07-12T08:39:39,192][INFO ][o.e.n.Node               ] [tpotcluster-node-01] started
+[36melasticsearch    |[0m [2020-07-12T08:39:39,558][INFO ][o.e.l.LicenseService     ] [tpotcluster-node-01] license [7b00bf46-6f48-41e8-952c-ce1ed32b78fb] mode [basic] - valid
+[36melasticsearch    |[0m [2020-07-12T08:39:39,585][INFO ][o.e.g.GatewayService     ] [tpotcluster-node-01] recovered [5] indices into cluster_state
+[36melasticsearch    |[0m [2020-07-12T08:39:40,553][INFO ][o.e.c.r.a.AllocationService] [tpotcluster-node-01] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana_task_manager_1][0]]]).
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:44 - <Info> - Going to use 16 thread(s)
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:44 - <Notice> - all 16 packet processing threads, 2 management threads initialized, engine started.
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:44 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:45 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - Using BPF 'not (host sicherheitstacho.eu or community.sicherheitstacho.eu or listbot.sicherheitstacho.eu) and not (host deb.debian.org) and not (host index.docker.io or docker.io)' on iface 'enp37s0'
+[33msuricata_1       |[0m 12/7/2020 -- 08:39:46 - <Info> - All AFP capture threads are running.
+[35mlogstash         |[0m Sending Logstash logs to /usr/share/logstash/logs which is now configured via log4j2.properties
+[35mlogstash         |[0m [2020-07-12T08:39:47,556][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[35mlogstash         |[0m [2020-07-12T08:39:47,647][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.8.0", "jruby.version"=>"jruby 9.2.11.1 (2.5.7) 2020-03-25 b1f55b1a40 OpenJDK 64-Bit Server VM 11.0.7+11-alpine-r1 on 11.0.7+11-alpine-r1 +indy +jit [linux-x86_64]"}
+[35mlogstash         |[0m [2020-07-12T08:39:49,081][INFO ][org.reflections.Reflections] Reflections took 24 ms to scan 1 urls, producing 21 keys and 41 values 
+[35mlogstash         |[0m [2020-07-12T08:39:49,736][INFO ][logstash.outputs.elasticsearch][main] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://elasticsearch:9200/]}}
+[35mlogstash         |[0m [2020-07-12T08:39:49,930][WARN ][logstash.outputs.elasticsearch][main] Restored connection to ES instance {:url=>"http://elasticsearch:9200/"}
+[35mlogstash         |[0m [2020-07-12T08:39:49,973][INFO ][logstash.outputs.elasticsearch][main] ES Output version determined {:es_version=>7}
+[35mlogstash         |[0m [2020-07-12T08:39:49,977][WARN ][logstash.outputs.elasticsearch][main] Detected a 6.x and above cluster: the `type` event field won't be used to determine the document _type {:es_version=>7}
+[35mlogstash         |[0m [2020-07-12T08:39:50,036][INFO ][logstash.outputs.elasticsearch][main] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["//elasticsearch:9200"]}
+[35mlogstash         |[0m [2020-07-12T08:39:50,074][INFO ][logstash.outputs.elasticsearch][main] Using default mapping template
+[35mlogstash         |[0m [2020-07-12T08:39:50,145][INFO ][logstash.outputs.elasticsearch][main] Attempting to install template {:manage_template=>{"index_patterns"=>"logstash-*", "version"=>60001, "settings"=>{"index.refresh_interval"=>"5s", "number_of_shards"=>1, "index.number_of_replicas"=>"0", "index.mapping.total_fields.limit"=>"2000", "index.query"=>{"default_field"=>"*"}}, "mappings"=>{"dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date"}, "@version"=>{"type"=>"keyword"}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}
+[35mlogstash         |[0m [2020-07-12T08:39:50,189][INFO ][logstash.outputs.elasticsearch][main] Installing elasticsearch template to _template/logstash
+[36melasticsearch    |[0m [2020-07-12T08:39:50,294][INFO ][o.e.c.m.MetadataIndexTemplateService] [tpotcluster-node-01] adding template [logstash] for index patterns [logstash-*]
+[35mlogstash         |[0m [2020-07-12T08:39:50,475][INFO ][logstash.javapipeline    ][main] Starting pipeline {:pipeline_id=>"main", "pipeline.workers"=>16, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>50, "pipeline.max_inflight"=>2000, "pipeline.sources"=>["/etc/logstash/conf.d/logstash.conf"], :thread=>"#<Thread:0x3921e053 run>"}
+[35mlogstash         |[0m [2020-07-12T08:39:51,701][INFO ][logstash.inputs.file     ][main] No sincedb_path set, generating one based on the "path" setting {:sincedb_path=>"/usr/share/logstash/data/plugins/inputs/file/.sincedb_d7f6db101f39dd3bc7af0869e32d632e", :path=>["/data/suricata/log/eve.json"]}
+[35mlogstash         |[0m [2020-07-12T08:39:51,720][INFO ][logstash.javapipeline    ][main] Pipeline started {"pipeline.id"=>"main"}
+[35mlogstash         |[0m [2020-07-12T08:39:51,752][INFO ][filewatch.observingtail  ][main][52b3f833b346337c67d95220eea36ac8fe77fbc13aef571460d59b972e215e7c] START, creating Discoverer, Watch with file and sincedb collections
+[35mlogstash         |[0m [2020-07-12T08:39:51,765][INFO ][logstash.agent           ] Pipelines running {:count=>1, :running_pipelines=>[:main], :non_running_pipelines=>[]}
+[35mlogstash         |[0m [2020-07-12T08:39:51,961][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[36melasticsearch    |[0m [2020-07-12T08:39:52,494][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[36melasticsearch    |[0m [2020-07-12T08:39:52,565][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"ml\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"uptime\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"canvas\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"visTypeXy\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"endpoint\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"infra\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"ingestManager\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"lists\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"logstash\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"security\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"siem\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"spaces\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:39:59Z","tags":["info","plugins-service"],"pid":1,"message":"Plugin \"apm\" is disabled."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins-system"],"pid":1,"message":"Setting up [85] plugins: [taskManager,licensing,observability,eventLog,encryptedSavedObjects,code,usageCollection,actions,case,alerting,alertingBuiltins,ossTelemetry,telemetryCollectionManager,telemetry,telemetryCollectionXpack,kibanaLegacy,devTools,translations,uiActions,statusPage,share,newsfeed,mapsLegacy,mapsLegacyLicensing,kibanaUtils,kibanaReact,inspector,embeddable,advancedUiActions,embeddableEnhanced,drilldowns,indexPatternManagement,esUiShared,discover,charts,bfetch,expressions,data,home,cloud,console,consoleExtensions,apm_oss,searchprofiler,painlessLab,grokdebugger,management,upgradeAssistant,snapshotRestore,reporting,licenseManagement,indexManagement,remoteClusters,crossClusterReplication,indexLifecycleManagement,watcher,triggers_actions_ui,transform,ingestPipelines,advancedSettings,telemetryManagementSection,fileUpload,dataEnhanced,visualizations,visTypeVislib,visTypeVega,visTypeTimeseries,rollup,visTypeTimelion,features,visTypeTagcloud,visTypeTable,visTypeMetric,visTypeMarkdown,inputControlVis,savedObjects,navigation,monitoring,lens,graph,maps,visualize,dashboard,dashboardEnhanced,savedObjectsManagement]"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["warning","plugins","encryptedSavedObjects","config"],"pid":1,"message":"Generating a random key for xpack.encryptedSavedObjects.encryptionKey. To be able to decrypt encrypted saved objects attributes after restart, please set xpack.encryptedSavedObjects.encryptionKey in kibana.yml"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["warning","plugins","actions","actions"],"pid":1,"message":"APIs are disabled due to the Encrypted Saved Objects plugin using an ephemeral encryption key. Please set xpack.encryptedSavedObjects.encryptionKey in kibana.yml."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["warning","plugins","alerting","plugins","alerting"],"pid":1,"message":"APIs are disabled due to the Encrypted Saved Objects plugin using an ephemeral encryption key. Please set xpack.encryptedSavedObjects.encryptionKey in kibana.yml."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins","monitoring","monitoring"],"pid":1,"message":"config sourced from: production cluster"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["warning","plugins","monitoring","monitoring"],"pid":1,"message":"X-Pack Monitoring Cluster Alerts will not be available: undefined"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","savedobjects-service"],"pid":1,"message":"Waiting until all Elasticsearch nodes are compatible with Kibana before starting saved objects migrations..."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins","crossClusterReplication"],"pid":1,"message":"Your basic license does not support crossClusterReplication. Please upgrade your license."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins","watcher"],"pid":1,"message":"Your basic license does not support watcher. Please upgrade your license."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins","monitoring","monitoring","kibana-monitoring"],"pid":1,"message":"Starting monitoring stats collection"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","savedobjects-service"],"pid":1,"message":"Starting saved objects migrations"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:02Z","tags":["info","plugins-system"],"pid":1,"message":"Starting [63] plugins: [taskManager,licensing,observability,eventLog,encryptedSavedObjects,code,usageCollection,actions,case,alerting,alertingBuiltins,ossTelemetry,telemetryCollectionManager,telemetry,telemetryCollectionXpack,kibanaLegacy,translations,share,discover,bfetch,expressions,data,home,cloud,console,consoleExtensions,apm_oss,searchprofiler,painlessLab,grokdebugger,management,upgradeAssistant,snapshotRestore,reporting,licenseManagement,indexManagement,remoteClusters,crossClusterReplication,indexLifecycleManagement,watcher,transform,ingestPipelines,advancedSettings,fileUpload,dataEnhanced,visualizations,visTypeVislib,visTypeVega,visTypeTimeseries,rollup,visTypeTimelion,features,visTypeTagcloud,visTypeTable,visTypeMetric,visTypeMarkdown,inputControlVis,monitoring,lens,graph,visualize,dashboard,savedObjectsManagement]"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:kibana@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:elasticsearch@7.8.0","info"],"pid":1,"state":"yellow","message":"Status changed from uninitialized to yellow - Waiting for Elasticsearch","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:elasticsearch@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from yellow to green - Ready","prevState":"yellow","prevMsg":"Waiting for Elasticsearch"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:xpack_main@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:monitoring@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["warning","plugins","reporting"],"pid":1,"message":"Generating a random key for xpack.reporting.encryptionKey. To prevent sessions from being invalidated on restart, please set xpack.reporting.encryptionKey in kibana.yml"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["info","plugins","reporting"],"pid":1,"message":"Chromium sandbox provides an additional layer of protection, and is supported for Linux Raspbian OS. Automatically enabling Chromium sandbox."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:reporting@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:dashboard_mode@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:beats_management@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:maps@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["info","plugins","taskManager","taskManager"],"pid":1,"message":"TaskManager is identified by the Kibana UUID: 0719914f-fc7c-4b49-99d7-1a3d2e42756b"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:task_manager@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:encryptedSavedObjects@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:apm_oss@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:console_legacy@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:region_map@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["status","plugin:ui_metric@7.8.0","info"],"pid":1,"state":"green","message":"Status changed from uninitialized to green - Ready","prevState":"uninitialized","prevMsg":"uninitialized"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["listening","info"],"pid":1,"message":"Server running at http://0.0.0.0:5601"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["error","reporting"],"pid":1,"message":"The Reporting plugin encountered issues launching Chromium in a self-test. You may have trouble generating reports."}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["error","reporting"],"pid":1,"message":"Error: Failed to launch chrome! spawn /usr/share/kibana/data/headless_shell-linux/headless_shell ENOENT\n\n\nTROUBLESHOOTING: https://github.com/GoogleChrome/puppeteer/blob/master/docs/troubleshooting.md\n\n    at onClose (/usr/share/kibana/node_modules/puppeteer-core/lib/Launcher.js:349:14)\n    at ChildProcess.helper.addEventListener.error (/usr/share/kibana/node_modules/puppeteer-core/lib/Launcher.js:340:64)\n    at ChildProcess.emit (events.js:198:13)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:246:12)\n    at onErrorNT (internal/child_process.js:415:16)\n    at process._tickCallback (internal/process/next_tick.js:63:19)"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["warning","reporting"],"pid":1,"message":"See Chromium's log output at \"/usr/share/kibana/data/headless_shell-linux/chrome_debug.log\""}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:03Z","tags":["error","reporting"],"pid":1,"message":"Error: Could not close browser client handle!\n    at browserFactory.test.then.browser (/usr/share/kibana/x-pack/legacy/plugins/reporting/server/lib/validate/validate_browser.js:26:15)\n    at process._tickCallback (internal/process/next_tick.js:68:7)"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:04Z","tags":["warning","reporting"],"pid":1,"message":"Reporting plugin self-check generated a warning: Error: Could not close browser client handle!"}
+[32mkibana           |[0m {"type":"log","@timestamp":"2020-07-12T08:40:04Z","tags":["info","http","server","Kibana"],"pid":1,"message":"http server running at http://0.0.0.0:5601"}
+[36melasticsearch    |[0m [2020-07-12T08:40:04,217][INFO ][o.e.c.m.MetadataIndexTemplateService] [tpotcluster-node-01] adding template [.management-beats] for index patterns [.management-beats]
+[36melasticsearch    |[0m [2020-07-12T08:40:19,306][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[32mkibana           |[0m {"type":"response","@timestamp":"2020-07-12T08:40:29Z","tags":[],"pid":1,"method":"get","statusCode":302,"req":{"url":"/","method":"get","headers":{"host":"127.0.0.1:5601","user-agent":"curl/7.67.0","accept":"*/*"},"remoteAddress":"127.0.0.1","userAgent":"127.0.0.1"},"res":{"statusCode":302,"responseTime":20,"contentLength":9},"message":"GET / 302 20ms - 9.0B"}
+[32mkibana           |[0m {"type":"response","@timestamp":"2020-07-12T08:40:59Z","tags":[],"pid":1,"method":"get","statusCode":302,"req":{"url":"/","method":"get","headers":{"host":"127.0.0.1:5601","user-agent":"curl/7.67.0","accept":"*/*"},"remoteAddress":"127.0.0.1","userAgent":"127.0.0.1"},"res":{"statusCode":302,"responseTime":10,"contentLength":9},"message":"GET / 302 10ms - 9.0B"}
+[36melasticsearch    |[0m [2020-07-12T08:41:23,393][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[36melasticsearch    |[0m [2020-07-12T08:41:23,424][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[36melasticsearch    |[0m [2020-07-12T08:41:25,407][INFO ][o.e.c.m.MetadataMappingService] [tpotcluster-node-01] [logstash-2020.07.12/8XkgUc7aRjqZN6RK2cjAPQ] update_mapping [_doc]
+[32mkibana           |[0m {"type":"response","@timestamp":"2020-07-12T08:41:30Z","tags":[],"pid":1,"method":"get","statusCode":302,"req":{"url":"/","method":"get","headers":{"host":"127.0.0.1:5601","user-agent":"curl/7.67.0","accept":"*/*"},"remoteAddress":"127.0.0.1","userAgent":"127.0.0.1"},"res":{"statusCode":302,"responseTime":11,"contentLength":9},"message":"GET / 302 11ms - 9.0B"}
+[32mkibana           |[0m {"type":"response","@timestamp":"2020-07-12T08:41:30Z","tags":[],"pid":1,"method":"get","statusCode":302,"req":{"url":"/","method":"get","headers":{"host":"127.0.0.1:8101","user-agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","accept-language":"en-CA,en-US;q=0.7,en;q=0.3","accept-encoding":"gzip, deflate","dnt":"1","connection":"keep-alive","upgrade-insecure-requests":"1"},"remoteAddress":"172.20.0.1","userAgent":"172.20.0.1"},"res":{"statusCode":302,"responseTime":9,"contentLength":9},"message":"GET / 302 9ms - 9.0B"}
+[32mkibana           |[0m {"type":"response","@timestamp":"2020-07-12T08:41:30Z","tags":[],"pid":1,"method":"get","statusCode":404,"req":{"url":"/kibana/app/kibana","method":"get","headers":{"host":"127.0.0.1:8101","user-agent":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8","accept-language":"en-CA,en-US;q=0.7,en;q=0.3","accept-encoding":"gzip, deflate","dnt":"1","connection":"keep-alive","upgrade-insecure-requests":"1"},"remoteAddress":"172.20.0.1","userAgent":"172.20.0.1"},"res":{"statusCode":404,"responseTime":36,"contentLength":9},"message":"GET /kibana/app/kibana 404 36ms - 9.0B"}
+Gracefully stopping... (press Ctrl+C again to force)
