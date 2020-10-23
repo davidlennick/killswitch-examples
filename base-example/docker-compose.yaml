@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  lvl0_db:
+    build:
+      context: ./lvl0/db
+    ports:
+      - '5432'
+    healthcheck: 
+      test: nc -z localhost 5432 
+  lvl1_api:
+    build:
+      context: ./lvl1/api
+    ports:
+      - '8080'
+    environment:
+      API_PORT: 8080 
+      DB_ADDR: lvl0_db
+      DB_PORT: 5432
+    depends_on:
+      - lvl0_db
+  lvl2_ui:
+    build:
+      context: ./lvl2/ui
+    environment: 
+      API_ADDR: lvl1_api
+      API_PORT: 8080
+      API_PATH: ""
+    depends_on:
+      - lvl1_api  
+  lvl3_proxy:
+    build:
+      context: ./lvl3/internet-proxy
+    ports:
+      - '80:80'
+
+
