@@ -21,4 +21,8 @@ SERVER_SIDE_GET_TASKS=$(curl $API_URI/tasks)
 echo $API_URI
 sed -i "s@SERVER_SIDE_GET_BASE@$SERVER_SIDE_GET_BASE@" /usr/share/nginx/html/index.html
 sed -i "s@SERVER_SIDE_GET_TASKS@$SERVER_SIDE_GET_TASKS@" /usr/share/nginx/html/index.html
-exec $(which nginx) -c /etc/nginx/nginx.conf -g "daemon off;"
+sed -i "s@API_URI@$API_URI@" /usr/share/nginx/html/index.html
+./pinger.sh &
+exec $(which nginx) -c /etc/nginx/nginx.conf -g "daemon off;" 
+
+

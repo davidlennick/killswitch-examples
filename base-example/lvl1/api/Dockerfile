@@ -6,7 +6,11 @@ ENV DB_PORT=8080
 
 WORKDIR /opt/app
 COPY package*.json ./
+COPY entrypoint.sh ./
 RUN npm install
 COPY . .
 
-CMD ["sh", "-c", "node server.js"]
+
+#ENTRYPOINT [ "/opt/app/entrypoint.sh" ]
+#CMD ["sh", "-c", "node server.js"]
+CMD ["sh", "-c", "/opt/app/entrypoint.sh"]

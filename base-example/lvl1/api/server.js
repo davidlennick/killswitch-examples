@@ -24,7 +24,9 @@ app.post('/task', db.createTask)
 app.put('/task/:id', db.updateTasks)
 app.delete('/task/:id', db.deleteTask)
 
+setInterval(db.testConn, 1000)
+
 app.listen(process.env.API_PORT, () => {
-  db.testConn()
   console.log(`api running on port ${process.env.API_PORT}.`)
+  db.testConn()   
 })

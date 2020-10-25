@@ -8,7 +8,6 @@ const pool = new Pool({
   port: process.env.DB_PORT,
 })
 
-
 const testConn = (request, response) => {
   pool.query('SELECT NOW()', (err, res) => {
     if (err) {
