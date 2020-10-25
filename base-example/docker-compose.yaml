@@ -4,34 +4,59 @@ services:
   lvl0_db:
     build:
       context: ./lvl0/db
-    ports:
-      - '5432'
+      labels: 
+        level: 0
     healthcheck: 
-      test: nc -z localhost 5432 
+      test: ["CMD-SHELL", "pg_isready -U docker && psql -U docker -lqt | cut -d \\| -f 1 | grep -qw todo"]
+      interval: 1s
+      timeout: 5s
+      retries: 5
   lvl1_api:
     build:
       context: ./lvl1/api
-    ports:
-      - '8080'
+      labels: 
+        level: 1
     environment:
       API_PORT: 8080 
       DB_ADDR: lvl0_db
-      DB_PORT: 5432
+      DB_PORT: 5432 
     depends_on:
       - lvl0_db
+    command: node server.js 
+    healthcheck: 
+      test: "curl -f http://lvl1_api:8080/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5      
   lvl2_ui:
     build:
       context: ./lvl2/ui
+      labels: 
+        level: 2
     environment: 
       API_ADDR: lvl1_api
       API_PORT: 8080
-      API_PATH: ""
+      API_PATH: "" 
+    healthcheck: 
+      test: "curl -f http://lvl2_ui:80/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5    
     depends_on:
-      - lvl1_api  
+      - lvl1_api      
   lvl3_proxy:
     build:
       context: ./lvl3/internet-proxy
+      labels: 
+        level: 3
     ports:
       - '80:80'
+    healthcheck: 
+      test: "curl -f http://lvl3_proxy:80/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5    
+    depends_on:
+      - lvl1_api  
 
 

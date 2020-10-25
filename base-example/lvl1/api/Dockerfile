@@ -9,4 +9,4 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
-CMD ["sh", "-c", "node server.js ${environment}"]
+CMD ["sh", "-c", "node server.js"]
