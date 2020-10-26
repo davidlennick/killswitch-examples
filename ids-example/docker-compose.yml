@@ -1,0 +1,79 @@
+version: '3'
+
+services:
+  elasticsearch:
+    build: elk/elasticsearch
+    container_name: elasticsearch
+    volumes:
+      - ./elk/elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - "127.0.0.1:9200:9200"
+      - "127.0.0.1:9300:9300"    
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    # healthcheck:
+    #   test: ["CMD-SHELL", "curl --silent --fail localhost:9200/_cluster/health || exit 1"]
+    #   interval: 30s
+    #   timeout: 30s
+    #   retries: 3
+
+  logstash:
+    build: elk/logstash
+    container_name: logstash
+    volumes:
+      - ./elk/logstash/config:/usr/share/logstash/config
+      - data:/var/log/suricata
+    restart: always
+    ports:
+      - "127.0.0.1:9600:9600"
+      - "127.0.0.1:5044:5044"
+    #   - "514:5000"              
+    #   - "514:5000/udp"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    build: elk/kibana
+    container_name: kibana
+    volumes:
+      - ./elk/kibana/config:/usr/share/kibana/config
+    ports:
+      - "127.0.0.1:5601:5601"
+    depends_on:
+      - elasticsearch
+  
+  evebox:
+    build: evebox
+    container_name: evebox
+    ports:
+      - "127.0.0.1:5636:5636"  
+    depends_on:
+      - elasticsearch
+    environment: 
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      EVEBOX_HTTP_HOST: 0.0.0.0
+    command: "/bin/evebox server -e http://elasticsearch:9200"
+  
+  suricata:
+    build: suricata
+    container_name: suricata
+    network_mode: host
+    cap_add:
+      - NET_ADMIN
+      - SYS_NICE
+      - NET_RAW
+    # ports:
+    #   - "7200:7200"
+    depends_on:
+      - kibana
+    environment:
+      IF: enp42s0
+    volumes:
+      - data:/var/log/suricata
+
+volumes:
+  data:
+
+     

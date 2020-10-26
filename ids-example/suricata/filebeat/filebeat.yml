@@ -1,0 +1,28 @@
+filebeat.modules:
+- module: suricata
+  eve:
+    enabled: true
+    var.paths: ["/var/log/suricata/eve.json"]
+
+# filebeat.inputs:
+#   - type: log
+#     enabled: true
+#     paths:
+#       - /var/log/suricata/eve.json  
+#     fields:
+#       event.type: suricata
+
+output.logstash:
+  hosts: ["127.0.0.1:5044"]
+
+setup.kibana:
+  host: "127.0.0.1:5601"
+
+## also, switch the logstash input to 
+# input {
+
+#   beats {
+#     port => 5044
+#     codec => json
+#     type => "suricata"
+#   } [...]
