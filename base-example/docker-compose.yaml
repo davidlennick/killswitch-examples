@@ -35,6 +35,8 @@ services:
       labels: 
         level: 2
     container_name: lvl2_ui
+    ports:
+      - '8090:80'
     environment: 
       API_ADDR: lvl1_api
       API_PORT: 8080

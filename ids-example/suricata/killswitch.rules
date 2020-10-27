@@ -1,0 +1,1 @@
+ alert tcp $EXTERNAL_NET -> $HOME_NET ( msg:"Kill switch trigger"; content:"GET"; http_method; content:"KILLSWITCH"; priority:1; ) 

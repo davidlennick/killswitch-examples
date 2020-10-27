@@ -66,12 +66,21 @@ services:
       - NET_RAW
     # ports:
     #   - "7200:7200"
-    depends_on:
-      - kibana
     environment:
       IF: enp42s0
     volumes:
       - data:/var/log/suricata
+
+  killswitch:
+    build: killswitch
+    container_name: killswitch
+    environment:
+      PYTHONUNBUFFERED: 0
+    volumes:
+      - data:/var/log/suricata
+      - /var/run/docker.sock:/var/run/docker.sock
+
+
 
 volumes:
   data:

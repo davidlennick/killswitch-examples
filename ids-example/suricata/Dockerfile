@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 WORKDIR /etc/suricata
 
@@ -13,9 +13,8 @@ ADD capture-filter.bpf /etc/suricata/
 ADD enable.conf /etc/suricata/
 ADD entrypoint.sh /etc/suricata/
 
-
-# add the example dashboards
-
+# add killswitch rules
+ADD killswitch.rules /var/lib/suricata/rules/
 
 # cleanup
 RUN rm -rf /var/lib/apt/lists/* && apt-get clean && apt autoremove -y

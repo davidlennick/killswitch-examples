@@ -13,7 +13,7 @@ suricata-update update-sources
 
 suricata-update enable-source et/open 
 
-suricata-update --enable-conf /etc/suricata/enable.conf
+suricata-update --enable-conf /etc/suricata/enable.conf --local=/var/lib/suricata/rules/killswitch.rules
 
 red_print "Starting suricata..." 
 suricata -D -v -i $IF 
