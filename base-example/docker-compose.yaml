@@ -1,0 +1,68 @@
+version: '3'
+
+services:
+  lvl0_db:
+    build:
+      context: ./lvl0/db
+      labels: 
+        level: 0
+    container_name: lvl0_db
+    healthcheck: 
+      test: ["CMD-SHELL", "pg_isready -U docker && psql -U docker -lqt | cut -d \\| -f 1 | grep -qw todo"]
+      interval: 1s
+      timeout: 5s
+      retries: 5
+  lvl1_api:
+    build:
+      context: ./lvl1/api
+      labels: 
+        level: 1
+    container_name: lvl1_api
+    environment:
+      API_PORT: 8080 
+      DB_ADDR: lvl0_db
+      DB_PORT: 5432 
+    depends_on:
+      - lvl0_db
+    healthcheck: 
+      test: "curl -f http://lvl1_api:8080/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5      
+  lvl2_ui:
+    build:
+      context: ./lvl2/ui
+      labels: 
+        level: 2
+    container_name: lvl2_ui
+    ports:
+      - '8090:80'
+    environment: 
+      API_ADDR: lvl1_api
+      API_PORT: 8080
+      API_PATH: "" 
+    healthcheck: 
+      test: "curl -f http://lvl2_ui:80/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5    
+    depends_on:
+      - lvl1_api      
+  lvl3_proxy:
+    build:
+      context: ./lvl3/internet-proxy
+      labels: 
+        level: 3
+    container_name: lvl3_proxy
+    ports:
+      - '80:80'
+    healthcheck: 
+      test: "curl -f http://lvl3_proxy:80/ || false"
+      interval: 1s
+      timeout: 5s
+      retries: 5    
+    depends_on:
+      - lvl1_api  
+  
+
+
